@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="party"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/component-3.xsd">
+
+    <!-- ENTITY DEFINITIONS -->
+    <entity-facade-xml location="entity/partyEntities.xml"/>
+
+    <!-- DATA (ENUMS) -->
+    <entity-facade-xml location="data/partyTypeData.xml"/>
+    <entity-facade-xml location="data/contactMechTypeData.xml"/>
+
+</component>

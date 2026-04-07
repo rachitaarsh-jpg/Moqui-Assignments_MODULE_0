@@ -1,0 +1,21 @@
+<entity-facade-xml type="seed">
+
+    <!-- PERSON PARTY -->
+    <Party partyId="P100" partyTypeEnumId="PtyPerson"/>
+    <Person partyId="P100" firstName="Rachit" lastName="Aarsh"/>
+
+    <!-- GROUP PARTY -->
+    <Party partyId="G100" partyTypeEnumId="PtyPartyGroup"/>
+    <PartyGroup partyId="G100" groupName="Hotwax CDAC Team"/>
+
+    <!-- EMAIL CONTACT -->
+    <ContactMech contactMechId="CM100" contactMechTypeEnumId="CmtEmail" infoString="rachit.aarsh@hotwax.co"/>
+
+    <!-- PHONE CONTACT -->
+    <ContactMech contactMechId="CM101" contactMechTypeEnumId="CmtTelecomNumber" infoString="9999999999"/>
+
+    <!-- LINK CONTACT TO PERSON -->
+    <PartyContactMech partyId="P100" contactMechId="CM100" fromDate="2024-01-01T00:00:00"/>
+    <PartyContactMech partyId="P100" contactMechId="CM101" fromDate="2024-01-01T00:00:00"/>
+
+</entity-facade-xml>
