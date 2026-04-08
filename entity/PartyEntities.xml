@@ -26,7 +26,6 @@
         <field name="dateOfBirth" type="date"/>
 
 
-
         <relationship type="one" related="com.moqui.party.Party" fk-name="PERSON_PARTY">
             <key-map field-name="partyId"/>
         </relationship>
