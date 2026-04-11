@@ -13,7 +13,17 @@
              <!-- Out parameter to hold the generated response string -->
             <parameter name="responseString" type="String"/>
         </out-parameters>
-
     </service>
+
+    <service verb="update" noun="Person" type="script"  location="component://party/service/party/UpdatePerson.groovy" validate="false">
+        <in-parameters>
+            <parameter name="partyId" type="String" required="true"/>
+            <parameter name="firstName" type="String"/>
+            <parameter name="lastName" type="String"/>
+            <parameter name="dateOfBirth" type="Date"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="responseString" type="String"/>
+        </out-parameters>    </service>
 
 </services>

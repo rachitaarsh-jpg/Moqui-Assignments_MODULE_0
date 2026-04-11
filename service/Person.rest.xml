@@ -8,4 +8,8 @@
         <service name="party.PartyServices.create#Person"/>
     </method>
 
+    <method type="put" require-authentication="anonymous-all">
+        <service name="party.PartyServices.update#Person"/>
+    </method>
+
 </resource>
