@@ -24,6 +24,17 @@
         </in-parameters>
         <out-parameters>
             <parameter name="responseString" type="String"/>
-        </out-parameters>    </service>
+        </out-parameters>
+    </service>
+
+    <service verb="delete" noun="Person" type="script" location="component://party/service/party/DeletePerson.groovy" validate="false">
+        <in-parameters>
+            <parameter name="partyId" type="String" required="true"/>
+        </in-parameters>
+
+        <out-parameters>
+            <parameter name="responseString" type="String"/>
+        </out-parameters>
+    </service>
 
 </services>

@@ -12,4 +12,9 @@
         <service name="party.PartyServices.update#Person"/>
     </method>
 
+    <method type="delete" require-authentication="anonymous-all">
+        <service name="party.PartyServices.delete#Person"/>
+    </method>
+
 </resource>
+
