@@ -16,5 +16,9 @@
         <service name="party.PartyServices.delete#Person"/>
     </method>
 
+    <method type="get" require-authentication="anonymous-all">
+        <service name="party.PartyServices.find#Person"/>
+    </method>
+
 </resource>
 

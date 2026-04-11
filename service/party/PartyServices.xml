@@ -37,4 +37,21 @@
         </out-parameters>
     </service>
 
+    <service verb="find" noun="Person">
+        <in-parameters>
+            <parameter name="partyId"/>
+            <parameter name="firstName"/>
+            <parameter name="lastName"/>
+        </in-parameters>
+        <out-parameters>
+            <!-- Returns a list of Map/EntityValue -->
+            <parameter name="personList" type="List"/>
+        </out-parameters>
+        <actions>
+            <entity-find entity-name="com.moqui.party.Person" list="personList">
+                <search-form-inputs default-orderBy="-partyId"/>
+            </entity-find>
+        </actions>
+    </service>
+
 </services>
